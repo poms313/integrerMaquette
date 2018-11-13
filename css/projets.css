@@ -1,0 +1,32 @@
+
+/*
+
+╔═════════════════════════════════╗
+║         Nos projets             ║
+╚═════════════════════════════════╝
+
+*/
+
+#portfolio h2 {
+	text-transform: uppercase;
+}
+
+#btnServices {
+	background-color: lightgray;
+}
+
+#btnServices a {}
+
+#btnServices a: {
+	background-color: #339bc4;
+}
+
+#btnServices a {}
+
+
+
+#sliderImage img {
+	width: 20%;
+	padding: 20px;
+}
+
