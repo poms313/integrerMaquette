@@ -4,44 +4,50 @@
 ║          Général                ║
 ╚═════════════════════════════════╝
 text navtruc au dessus
+enlever decalage lors du click sur lien
+pk photo hamburger et autres dossiers?
 
-coller bouton portfolio
+
 fleche vers bas on selected
 legende sur image portfolio
-icones services dans cerle
 lien google map
 */
 
+
 @font-face {
-	font-family: 'fontawesome-webfont';
-	src: url('../fonts/fontawesome-webfont.ttf');
-	src: url('../fonts/fontawesome-webfont.eot') format('eot'),
-	url('../fonts/fontawesome-webfont.woff') format('woff'),
-	url('../fonts/fontawesome-webfont.ttf') format('truetype'),
-	url('../fonts/fontawesome-webfont.svg') format('svg');
+	font-family: 'Roboto-Black';
+	src: url('../fonts/Roboto-Black.ttf');
+}
+
+@font-face {
+	font-family: 'Roboto-Medium';
+	src: url('../fonts/Roboto-Medium.ttf');
 }
 
 body {
 	position: relative;
 	margin: 0;
 	padding: 0;
-	font-family: 'fontawesome-webfont', sans-serif;
+	font-family: 'Roboto-Medium', sans-serif;
 }
+
+h1,
+h2 {
+	font-family: 'Roboto-Black', sans-serif;
+}
+
+/* Décale le contenu de la page vers bas, afin de pas masquer le contenu caché par le menu*/
 
 main {
-	position: absolute;
-	top: 180px;
+
+	margin-top: 100px;
 }
 
-#main {}
-
-/*Décale la clible des liens vers le bas, afin de pas masquer le contenu*/
+/*Décale la clible des liens vers le bas, afin de pas masquer le contenu caché par le menu*/
 
 section:target {
 	padding-top: 83px;
-	margin-top: -83px;
 }
-
 
 
 .bleu {
@@ -55,4 +61,22 @@ button {
 
 button:hover {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.rondBarre {
+	height: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.rondBarre span {
+	background-color: #c4c4c4;
+	height: 1px;
+	width: 50px;
+}
+
+.rondBarre i {
+	display: flex;
+	text-align: center;
 }

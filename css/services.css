@@ -1,4 +1,3 @@
-
 /*
 
 ╔═════════════════════════════════╗
@@ -7,26 +6,80 @@
 
 */
 
+#services {
+	margin-top: 60px;
+}
+
+#introServices {
+	text-align: center;
+}
+
+#introServices p {
+	margin: 10px;
+
+	color: #565656;
+}
+
 #services h2 {
+	margin: 10px;
+	font-size: 30px;
 	text-transform: uppercase;
 }
 
+#nosServices {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
 
 #servicesGauche {
-	float: left;
 	width: 500px;
-	height: 500px;
+	height: 450px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: center;
+}
+
+#servicesGauche img {
+	width: 100%;
 }
 
 #servicesDroite {
-	padding-top: 50px;
-	width: 100%;
+	width: 500px;
 	height: 450px;
+	padding: 0 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 }
 
-#servicesDroite i {
+#servicesDroite p {
+	text-align: justify;
+	color: #565656;
+}
+
+#ux,
+#ui,
+#seo {}
+
+.iconesServices {
+	width: 70px;
+	height: 70px;
+	margin: 30px 40px;
+	position: relative;
 	float: left;
-	padding: 5px;
-	margin: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #c4c4c4;
+	border-radius: 50%;
 }
 
+
+
+.iconesServices i:last-of-type {
+	position: absolute;
+	right: -8px;
+	background-color: white;
+}

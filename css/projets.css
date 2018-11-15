@@ -1,32 +1,48 @@
-
 /*
 
 ╔═════════════════════════════════╗
 ║         Nos projets             ║
 ╚═════════════════════════════════╝
-
+#triangle {
+    width: 0;
+    height: 0;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 30px solid blue;
+}
 */
+
+#introProjets {
+	text-align: center;
+}
 
 #portfolio h2 {
 	text-transform: uppercase;
 }
 
-#btnServices {
-	background-color: lightgray;
+#btnServices {}
+
+#btnServices a {
+	background-color: navy;
+}
+
+#btnServices a .active {
+	background-color: coral;
 }
 
 #btnServices a {}
 
-#btnServices a: {
-	background-color: #339bc4;
+#sliderImage {
+	display: flex;
+	flex-wrap: wrap;
+	/*ne pas etirer images*/
+	align-content: stretch;
+
+	justify-content: space-around;
+
 }
-
-#btnServices a {}
-
-
 
 #sliderImage img {
-	width: 20%;
-	padding: 20px;
-}
+	width: 280px;
 
+}

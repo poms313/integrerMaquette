@@ -1,4 +1,13 @@
 @media all and (max-width: 640px) {
+
+	/*navigation*/
+	/*supprime la bordure au dessus de la navigation*/
+	nav a,
+	#btnAcceuil {
+		border: none;
+	}
+
+	/*réduit la hauteur du menu et du logo*/
 	#menuGauche {
 		padding: 0;
 		height: 40px;
@@ -9,12 +18,22 @@
 
 	}
 
+	/*augmente la largeur du contenant des liens afin qu'ils passent à la ligne*/
 	#menuDroite {
 		width: 100%;
+		height: auto;
 	}
 
 	#menuDroite a {
 		padding: 10px 0;
-		line-height: normal;
+		line-height: 30px;
 	}
-}
+
+	/* Services*/
+	/* Centre l'image*/
+	#servicesGauche img {
+		margin: auto;
+	}
+	#servicesGauche {
+		height: auto;
+	}
