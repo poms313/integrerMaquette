@@ -24,12 +24,14 @@ nav {
 nav a {
 	border-top: 3px solid white;
 	text-decoration: none;
-	color: #565656;
+
 	line-height: 80px;
 	font-weight: 600;
 }
 
-
+nav a:hover {
+	border-top: 3px solid #339bc4;
+}
 
 #btnAcceuil {
 	border-top: 3px solid red;

@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+	<meta name="description" content="WebAgency réalise vos projets web, site internet et e-commerce" />
 	<title>WEBAGENCY: l'agence de tous vos projets</title>
 
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
@@ -87,12 +87,15 @@
 		<section id="services">
 
 			<div id="introServices">
+
 				<h2>Nos services</h2>
+
 				<div class="rondBarre">
 					<span></span>
 					<p><i class="fas fa-circle bleu "></i></p>
 					<span></span>
 				</div>
+
 				<p>Nous avons plusieurs années d'expériences dans le web, nous anticipons donc toutes vos demandes. </p>
 				<p>Vous vous posez une question, nous avons déjà la réponse! </p>
 			</div>
@@ -156,28 +159,102 @@
 					<p><i class="fas fa-circle bleu "></i></p>
 					<span></span>
 				</div>
-				
+
 				<p>Pour vous donner une idée, vous pouvez voir nos derniers projets en ligne. Nous pouvons aussi bien mettre à jour un site existant ou vous en créer un nouveau qui sera rapidement fonctionnel car nous utilisons des méthodes de production agiles.</p>
-
-				<div id="btnServices">
-					<a id="All" class="active" href="#">Tous nos travaux</a>
-					<a id="btnCreative" href="#">Nos créations</a>
-					<a id="btnCorporate" href="#">Projets associatifs</a>
-					<a id="btnPportfolio" href="#">Portfolio</a>
-				</div>
 			</div>
 
 
-			<div id="sliderImage">
-				<img src="../images/portfolio/01.jpg" alt="01 " />
-				<img src="../images/portfolio/02.jpg" alt="02 " />
-				<img src="../images/portfolio/03.jpg" alt="03 " />
-				<img src="../images/portfolio/04.jpg" alt="04 " />
-				<img src="../images/portfolio/05.jpg" alt="05 " />
-				<img src="../images/portfolio/06.jpg" alt="06 " />
-				<img src="../images/portfolio/07.jpg" alt="07 " />
-				<img src="../images/portfolio/08.jpg" alt="08 " />
+			<div id="btnProjets">
+
+				<input type="radio" name="portfolio" id="btnAllWorks" class="btnAllWorks" checked /><label for="btnAllWorks" class="btnAllWorks">Tous</label>
+
+				<input type="radio" name="portfolio" id="btnCreative" class="btnCreative" /><label for="btnCreative" class="btnCreative">Créations</label>
+
+				<input type="radio" name="portfolio" id="btnCorporate" class="btnCorporate" /><label for="btnCorporate" class="btnCorporate">Associatifs</label>
+
+				<input type="radio" name="portfolio" id="btnPortfolio" class="btnPortfolio" /><label for="btnPortfolio" class="btnPortfolio">Portfolio</label>
+
+
+
+
+				<article id="portfolioImages">
+
+					<figure class="btnPortfolio">
+						<img src="../images/portfolio/01.jpg" alt="creation logiciel" />
+						<figcaption>
+							<div class="fa fa-eye"></div>
+							<h3>Optic 5000</h3>
+							<h4>Optique</h4>
+						</figcaption>
+					</figure>
+
+					<figure class="btnCreative">
+						<img src="../images/portfolio/02.jpg" alt="Catalogue interactif" />
+						<figcaption>
+							<div class="fa fa-eye"></div>
+							<h3>Déco 3000</h3>
+							<h4>Vente de Meubles</h4>
+						</figcaption>
+					</figure>
+
+					<figure class="btnCorporate">
+						<img src="../images/portfolio/03.jpg" alt="design soigné" />
+						<figcaption>
+							<div class="fa fa-eye"></div>
+							<h3>Pompadour</h3>
+							<h4>boisons</h4>
+						</figcaption>
+					</figure>
+
+					<figure class="btnPortfolio">
+						<img src="../images/portfolio/04.jpg" alt="contenu confidentiel" />
+						<figcaption>
+							<div class="fa fa-eye"></div>
+							<h3>Academia</h3>
+							<h4>Cours en ligne</h4>
+						</figcaption>
+					</figure>
+
+					<figure class="btnPortfolio">
+						<img src="../images/portfolio/05.jpg" alt="site sécurisé" />
+						<figcaption>
+							<div class="fa fa-eye"></div>
+							<h3>Cadeau Mag</h3>
+							<h4>Emballages cadeaux</h4>
+						</figcaption>
+					</figure>
+
+					<figure class="btnCorporate">
+						<img src="../images/portfolio/06.jpg" alt="e-commerce" />
+						<figcaption>
+							<div class="fa fa-eye"></div>
+							<h3>Art/co</h3>
+							<h4>Galerie d'art</h4>
+						</figcaption>
+					</figure>
+
+					<figure class="btnCreative">
+						<img src="../images/portfolio/07.jpg" alt="mosaique d'images" />
+						<figcaption>
+							<div class="fa fa-eye"></div>
+							<h3>The New Style</h3>
+							<h4>Galerie d'art</h4>
+						</figcaption>
+					</figure>
+
+					<figure class="btnCorporate">
+						<img src="../images/portfolio/08.jpg" alt="base de donnée" />
+						<figcaption>
+							<div class="fa fa-eye"></div>
+							<h3>Box center</h3>
+							<h4>Livraison de box</h4>
+						</figcaption>
+					</figure>
+				</article>
 			</div>
+
+
+
 
 		</section>
 
@@ -186,26 +263,32 @@
 ║     Formulaire de contact       ║
 ╚═════════════════════════════════╝  -->
 		<section id="contact">
-			<div id="carte">
-				<!-- lien google map -->
-				<div id="notreAdresse">
-					<h2>Information de contact</h2>
-					<h3>Webagency SAS</h3>
-					<p>25 rue d'Hauteville 75010 Paris</p>
-					<p>Tél: 01.02.03.04.05</p>
-				</div>
+			<iframe src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=25%20rue%20d'Hauteville%2075010%20Paris+(WebAgency)&amp;ie=UTF8&amp;t=p&amp;z=17&amp;iwloc=B&amp;output=embed" frameborder="0" marginheight="0" marginwidth="0">
+			</iframe>
+
+			<button class="cache">
+			<a href="https://www.google.com/maps?ll=48.873052,2.349826&z=17&t=m&hl=en&gl=US&mapclient=embed&q=25+Rue+d%27Hauteville+75010+Paris">Où sommes nous</a>
+			   </button>
+			<div id="notre-adresse">
+				<h2>Informations de contact</h2>
+				<h3>Webagency SAS</h3>
+				25 rue d'Hauteville 75010 Paris<br> Tél: 01.02.03.04.05
+
 
 				<form action="/action_page.php " id="usrform">
 					<input type="text" name="nom" placeholder="Votre nom"><br>
 					<input name="email" placeholder="Votre email"><br>
 					<input type="text" name="objet" placeholder="Objet"><br>
-					<textarea name="message" placeholder="Message" rows="8"></textarea>
+					<textarea name="message" placeholder="Vous souhaitez obtenir un devis? Vous avez une question?" rows="6"></textarea>
 
 					<br>
 					<button type="submit" value="Submit">Envoyer votre message</button>
 
 				</form>
 			</div>
+
+
+
 		</section>
 
 

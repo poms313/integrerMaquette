@@ -3,16 +3,10 @@
 ╔═════════════════════════════════╗
 ║         Nos projets             ║
 ╚═════════════════════════════════╝
-#triangle {
-    width: 0;
-    height: 0;
-    border-left: 18px solid transparent;
-    border-right: 18px solid transparent;
-    border-bottom: 30px solid blue;
-}
+
 */
 
-#introProjets {
+#portfolio {
 	text-align: center;
 }
 
@@ -20,29 +14,144 @@
 	text-transform: uppercase;
 }
 
-#btnServices {}
 
-#btnServices a {
-	background-color: navy;
+label.btnAllWorks {
+	border-radius: 3px 0 0 3px;
 }
 
-#btnServices a .active {
-	background-color: coral;
+label.btnPortfolio {
+	border-radius: 0 3px 3px 0;
 }
 
-#btnServices a {}
 
-#sliderImage {
+
+/* Cache les boutons radio et les fait passer pour des boutons normaux */
+
+#btnProjets input {
+	display: none;
+}
+
+label.btnAllWorks,
+label.btnCreative,
+label.btnCorporate,
+label.btnPortfolio {
+	width: 80px;
+	margin: 40px -5px;
+	padding: 15px;
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+
+
+
+
+
+
+	font-weight: 600;
+	background-color: #c4c4c4;
+
+	color: #565656;
+
+	cursor: pointer;
+
+}
+
+.btnAllWorks:checked ~ label.btnAllWorks,
+.btnCreative:checked ~ label.btnCreative,
+.btnCorporate:checked ~ label.btnCorporate,
+.btnPortfolio:checked ~ label.btnPortfolio {
+	background-color: #339bc4;
+	color: white;
+	box-shadow: 0 -3px #71A0CC inset;
+}
+
+/* Création du triangle */
+
+.btnAllWorks:checked ~ label.btnAllWorks:after,
+.btnCreative:checked ~ label.btnCreative:after,
+.btnCorporate:checked ~ label.btnCorporate:after,
+.btnPortfolio:checked ~ label.btnPortfolio:after {
+	content: "";
+	display: block;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #71A0CC;
+	position: absolute;
+	top: 100%;
+	right: 37%;
+}
+
+/* Cache les images non concernées par la sélection */
+
+.btnCreative:checked ~ #portfolioImages figure:not(.btnCreative),
+.btnCorporate:checked ~ #portfolioImages figure:not(.btnCorporate),
+.btnPortfolio:checked ~ #portfolioImages figure:not(.btnPortfolio) {
+	position: absolute;
+	border: 10px solid red;
+	opacity: 0;
+	transform: translate(-200%, -200%) scale(0);
+}
+
+
+#portfolioImages {
 	display: flex;
 	flex-wrap: wrap;
-	/*ne pas etirer images*/
-	align-content: stretch;
-
 	justify-content: space-around;
+	align-items: center;
+}
+
+#portfolioImages img {
+	width: 280px;
+}
+
+#portfolioImages figure {
+	margin: 5px;
+
+	position: relative;
+	z-index: 5;
+	cursor: pointer;
+
+	opacity: 1;
+	transition: all 2s;
+}
+
+
+
+
+
+#portfolioImages figcaption {
+	width: 100%;
+
+	position: absolute;
+	bottom: 5px;
+	z-index: -1;
+
+	background-color: rgba(58, 58, 58, .7);
 
 }
 
-#sliderImage img {
-	width: 280px;
 
+#portfolioImages div {
+	background-color: #339bc4;
+	padding: 5px;
+	position: absolute;
+	top: -14px;
+	right: 10px;
+	border-radius: 50%;
+	border: 2px solid white;
+	color: #fff;
+}
+
+#portfolioImages figcaption h3,
+#portfolioImages figcaption h4 {
+	margin: 5px;
+	color: white;
+	text-align: left;
+
+}
+
+/* Remonte la légende lors du survol de l'image */
+
+#portfolioImages figure:hover figcaption {
+	z-index: 10;
 }
