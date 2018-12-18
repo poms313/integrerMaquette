@@ -1,70 +1,57 @@
 /*
-
-╔═════════════════════════════════╗
-║        Nos services             ║
-╚═════════════════════════════════╝
-
+  _____ ______ _______      _______ _____ ______  _____ 
+ / ____|  ____|  __ \ \    / /_   _/ ____|  ____|/ ____|
+| (___ | |__  | |__) \ \  / /  | || |    | |__  | (___  
+ \___ \|  __| |  _  / \ \/ /   | || |    |  __|  \___ \ 
+ ____) | |____| | \ \  \  /   _| || |____| |____ ____) |
+|_____/|______|_|  \_\  \/   |_____\_____|______|_____/ 
 */
 
-#services {
-	margin-top: 60px;
-}
-
-#introServices {
-	text-align: center;
-}
-
-#introServices p {
-	margin: 10px;
-
-
-}
-
-#services h2 {
-	
-	font-size: 30px;
-	text-transform: uppercase;
-}
-
-#nosServices {
+#nos-services {
+	min-height: 400px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	text-align: left;
 }
 
-#servicesGauche {
-	width: 500px;
-	height: 450px;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-content: center;
-}
-
-#servicesGauche img {
+#services-gauche img {
 	width: 100%;
 }
 
-#servicesDroite {
+#services-droite {
 	width: 500px;
-	height: 450px;
-	padding: 0 25px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 }
 
-#servicesDroite p {
-	text-align: justify;
-
+.icones-services {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.iconesServices {
+.texte-services {
+	width: 85%;
+}
+
+.texte-services h3 {
+	margin: 20px 10px 0 10px;
+	padding: 0;
+}
+
+.texte-services p {
+	margin: 10px 10px 20px 10px;
+	padding: 0;
+	text-align: justify;
+}
+
+.icones-dans-cercle {
 	width: 70px;
 	height: 70px;
-	margin: 30px 40px;
+	margin: 30px;
 	position: relative;
-	float: left;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -72,10 +59,8 @@
 	border-radius: 50%;
 }
 
-
-
-.iconesServices i:last-of-type {
+.icones-dans-cercle i:last-of-type {
 	position: absolute;
 	right: -8px;
-	background-color: white;
+	background-color: #fff;
 }

@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="WebAgency réalise vos projets web, site internet et e-commerce. Nous pourrons concevoir un site responsive et optimisé pour le SEO. Nous avons aussi une équipe spécialisée en UX design, UI design." />
+	<meta name="keywords" content="Web Agency, création site web, seo" />
+	<title>WEBAGENCY: l'agence de tous vos projets</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/services.css">
+	<link rel="stylesheet" type="text/css" href="css/projets.css">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/optionnel.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="icon" href="images/favicon.ico" />
+</head>
+
+<body>
+
+
+	<!-- 
+╔═════════════════════════════════╗
+║             Header              ║
+╚═════════════════════════════════╝   -->
+
+
+	<header>
+
+		<img src="images/logo.png" alt="logo" />
+		<nav>
+			<input class="navicon" id="navicon" type="checkbox">
+			<label for='navicon'><i class="fas fa-bars"></i></label>
+			<ul>
+				<li><a href="#slider">Acceuil</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+
+	<section id="slider">
+
+
+		<img src="images/slider/bg1.jpg" alt=" " />
+		<img src="images/slider/bg2.jpg" alt=" " />
+
+		<div class="fleche fleche-slider-gauche"><i class="fas fa-chevron-left"></i></div>
+
+		<div id="slider-texte">
+			<h1><span class="bleu">Webagency</span> : l'agence de tous<br>vos projets ! </h1>
+			<p>Vous avez un projet web? La WebAgency vous aide à le réaliser !</p>
+			<button>Plus d'infos</button>
+		</div>
+
+		<div class="fleche fleche-slider-droite"><i class="fas fa-chevron-right"></i></div>
+
+		<div id="progress">
+			<div id="progress-bleu"></div>
+			<div id="progress-gris"></div>
+		</div>
+
+	</section>
+
+
+	<!-- 
+╔═════════════════════════════════╗
+║        Nos services             ║
+╚═════════════════════════════════╝    -->
+
+
+	<section id="services">
+
+		<div>
+			<h2>Nos services</h2>
+
+			<div class="rond-et-barres">
+				<span></span>
+				<div><i class="fas fa-circle bleu "></i></div>
+				<span></span>
+			</div>
+
+			<p>Nous avons plusieurs années d'expériences dans le web, nous anticipons donc toutes vos demandes. <br>Vous vous posez une question, nous avons déjà la réponse! </p>
+		</div>
+
+		<div id="nos-services">
+			<div id="services-gauche">
+				<img src="images/main-feature.png " alt="nos services principaux: UX design, UI design et SEO " />
+			</div>
+
+
+			<div id="services-droite">
+
+				<div class="icones-services">
+					<div class="icones-dans-cercle">
+						<i class="fas fa-chart-line fa-2x bleu"></i>
+						<i class="fas fa-circle fa-1x bleu"></i>
+					</div>
+					<div class="texte-services">
+						<h3>UX design</h3>
+						<p>En amont de la réalisation de votre projet, nous étudions tous les éléments pour faciliter la navigation.</p>
+					</div>
+				</div>
+
+				<div class="icones-services">
+					<div class="icones-dans-cercle">
+						<i class="fas fa-cubes fa-2x bleu"></i>
+						<i class="fas fa-circle fa-1x bleu"></i>
+					</div>
+					<div class="texte-services">
+						<h3>UI design</h3>
+						<p>Nous ajustons au mieux les éléments de votre site afin de vous offrir un site parfait, optimisé pour les portables.</p>
+					</div>
+				</div>
+
+				<div class="icones-services">
+					<div class="icones-dans-cercle">
+						<i class="fas fa-chart-pie fa-2x bleu"></i>
+						<i class="fas fa-circle fa-1x bleu"></i>
+					</div>
+					<div class="texte-services">
+						<h3>SEO</h3>
+						<p>Nous optimisons votre site pour qu'il soit le plus haut possible dans les résultats de recherche.</p>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+
+	</section>
+
+
+
+	<!-- 
+╔═════════════════════════════════╗
+║         Nos projets             ║
+╚═════════════════════════════════╝   -->
+
+
+
+	<section id="portfolio">
+
+		<div id="intro-projets">
+			<h2>Nos projets</h2>
+
+			<div class="rond-et-barres">
+				<span></span>
+				<div><i class="fas fa-circle bleu "></i></div>
+				<span></span>
+			</div>
+
+			<p>Pour vous donner une idée, vous pouvez voir nos derniers projets en ligne. Nous pouvons aussi bien mettre à jour un site existant ou vous en créer un nouveau qui sera rapidement fonctionnel car nous utilisons des méthodes de production agiles.</p>
+		</div>
+
+
+		<div id="btn-projets">
+
+
+			<input type="radio" name="portfolio" id="btn-all-works" class="btn-all-works" checked />
+			<label for="btn-all-works" class="btn-all-works">Tous</label>
+
+			<input type="radio" name="portfolio" id="btn-creative" class="btn-creative" />
+			<label for="btn-creative" class="btn-creative">Créations</label>
+
+			<input type="radio" name="portfolio" id="btn-corporate" class="btn-corporate" />
+			<label for="btn-corporate" class="btn-corporate">Associatifs</label>
+
+			<input type="radio" name="portfolio" id="btn-portfolio" class="btn-portfolio" />
+			<label for="btn-portfolio" class="btn-portfolio">Portfolio</label>
+
+
+			<div id="portfolio-images">
+
+				<div>
+					<figure class="btn-creative">
+						<img src="images/portfolio/01.jpg" alt="creation logiciel" />
+						<figcaption>
+							<div class="fa fa-eye"></div>
+							<h3>Optic 5000</h3>
+							<p>Optique</p>
+						</figcaption>
+					</figure>
+
+					<figure class="btn-creative">
+						<img src="images/portfolio/02.jpg" alt="Catalogue interactif" />
+						<figcaption>
+							<div class="fa fa-eye"></div>
+							<h3>Déco 3000</h3>
+							<p>Vente de Meubles</p>
+						</figcaption>
+					</figure>
+
+					<figure class="btn-corporate">
+						<img src="images/portfolio/03.jpg" alt="design soigné" />
+						<figcaption>
+							<div class="fa fa-eye"></div>
+							<h3>Pompadour</h3>
+							<p>boisons</p>
+						</figcaption>
+					</figure>
+
+					<figure class="btn-creative">
+						<img src="images/portfolio/04.jpg" alt="contenu confidentiel" />
+						<figcaption>
+							<div class="fa fa-eye"></div>
+							<h3>Academia</h3>
+							<p>Cours en ligne</p>
+						</figcaption>
+					</figure>
+				</div>
+
+				<div>
+					<figure class="btn-portfolio">
+						<img src="images/portfolio/05.jpg" alt="site sécurisé" />
+						<figcaption>
+							<div class="fa fa-eye"></div>
+							<h3>Cadeau Mag</h3>
+							<p>Emballages cadeaux</p>
+						</figcaption>
+					</figure>
+
+					<figure class="btn-portfolio">
+						<img src="images/portfolio/06.jpg" alt="e-commerce" />
+						<figcaption>
+							<div class="fa fa-eye"></div>
+							<h3>Art/co</h3>
+							<p>Galerie d'art</p>
+						</figcaption>
+					</figure>
+
+					<figure class="btn-portfolio">
+						<img src="images/portfolio/07.jpg" alt="mosaique d'images" />
+						<figcaption>
+							<div class="fa fa-eye"></div>
+							<h3>The New Style</h3>
+							<p>Galerie d'art</p>
+						</figcaption>
+					</figure>
+
+					<figure class="btn-portfolio">
+						<img src="images/portfolio/08.jpg" alt="base de donnée" />
+						<figcaption>
+							<div class="fa fa-eye"></div>
+							<h3>Box center</h3>
+							<p>Livraison de box</p>
+						</figcaption>
+					</figure>
+				</div>
+
+			</div>
+		</div>
+
+	</section>
+
+	<!-- 
+╔═════════════════════════════════╗
+║     Formulaire de contact       ║
+╚═════════════════════════════════╝  -->
+
+
+	<section id="contact">
+
+		<div id="notre-adresse">
+
+			<div>
+				<h2>Informations de contact</h2>
+
+				<h3>Webagency SAS</h3>
+				<p>25 rue d'Hauteville 75010 Paris<br> Tél: 01.02.03.04.05</p>
+
+				<form>
+					<input type="text" name="nom" title="Votre nom" placeholder="Votre nom"><br>
+					<input name="email" title="Votre email" placeholder="Votre email"><br>
+					<input type="text" title="Objet" name="objet" placeholder="Objet"><br>
+					<textarea name="message" title="message" placeholder="Vous souhaitez obtenir un devis? Vous avez une question?" rows="6"></textarea>
+
+					<br>
+					<button type="submit" value="Submit">Envoyer votre message</button>
+				</form>
+			</div>
+
+		</div>
+
+		<iframe src="https://maps.google.com/maps?width=100&amp;height=600&amp;hl=en&amp;q=25%20rue%20d'Hauteville%2075010%20Paris+(WebAgency)&amp;ie=UTF8&amp;t=p&amp;z=17&amp;iwloc=B&amp;output=embed">
+			</iframe>
+	</section>
+
+
+</body>
+
+</html>

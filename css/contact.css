@@ -1,37 +1,62 @@
 /*
-
-╔═════════════════════════════════╗
-║     Formulaire de contact       ║
-╚═════════════════════════════════╝
-
+  _____ ____  _   _ _______       _____ _______ 
+ / ____/ __ \| \ | |__   __|/\   / ____|__   __|
+| |   | |  | |  \| |  | |  /  \ | |       | |   
+| |   | |  | | . ` |  | | / /\ \| |       | |   
+| |___| |__| | |\  |  | |/ ____ \ |____   | |   
+ \_____\____/|_| \_|  |_/_/    \_\_____|  |_|   
 */
 
 #contact {
 	position: relative;
 }
 
-iframe {
-	height: 600px;
-	width: 100%;
-	border: 0;
-}
-
-#contact .cache {
-	margin: auto;
-}
+/* Contient le font bleu et ajuste la position du formulaire */
 
 #notre-adresse {
+	height: 600px;
+	width: 100%;
 	position: absolute;
-	top: 15%;
-	right: 10%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	background-color: rgba(89, 170, 210, .3)
+}
+
+#notre-adresse div {
+	width: 350px;
+	height: 80%;
+	margin-right: 10%;
 	padding: 20px;
 	background-color: rgba(255, 255, 255, .8);
+	text-align: left;
 }
+
+/* Supprime les marges et le padding de l'adresse pour la coller à gauche */
+
+#notre-adresse p,
+#notre-adresse h3 {
+	margin: 0;
+	padding: 0;
+}
+
 
 input,
 textarea {
 	width: 90%;
 	margin: 10px 0;
 	padding: 5px;
+}
 
+
+/* Place la carte sous le fond bleu */
+
+iframe {
+	height: 600px;
+	width: 100%;
+	border: 0;
+	margin: 0;
+	position: absolute;
+	left: 0;
+	z-index: -1;
 }

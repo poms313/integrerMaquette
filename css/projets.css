@@ -1,76 +1,64 @@
 /*
-
-╔═════════════════════════════════╗
-║         Nos projets             ║
-╚═════════════════════════════════╝
-
+ _____  _____   ____       _ ______ _______ _____ 
+|  __ \|  __ \ / __ \     | |  ____|__   __/ ____|
+| |__) | |__) | |  | |    | | |__     | | | (___  
+|  ___/|  _  /| |  | |_   | |  __|    | |  \___ \ 
+| |    | | \ \| |__| | |__| | |____   | |  ____) |
+|_|    |_|  \_\\____/ \____/|______|  |_| |_____/ 
 */
 
 #portfolio {
-	text-align: center;
+	background-color: #e5e5e5;
 }
 
 #portfolio h2 {
-	text-transform: uppercase;
+	padding-top: 10px;
 }
 
-
-label.btnAllWorks {
+label.btn-all-works {
 	border-radius: 3px 0 0 3px;
 }
 
-label.btnPortfolio {
+label.btn-portfolio {
 	border-radius: 0 3px 3px 0;
 }
 
+/* Transforme les labels des inputs en boutons */
 
-
-/* Cache les boutons radio et les fait passer pour des boutons normaux */
-
-#btnProjets input {
-	display: none;
-}
-
-label.btnAllWorks,
-label.btnCreative,
-label.btnCorporate,
-label.btnPortfolio {
+label.btn-all-works,
+label.btn-creative,
+label.btn-corporate,
+label.btn-portfolio {
 	width: 80px;
-	margin: 40px -5px;
+	margin: 0 -2px 40px -2px;
 	padding: 15px;
 	position: relative;
 	display: inline-flex;
 	justify-content: center;
-
-
-
-
-
-
 	font-weight: 600;
 	background-color: #c4c4c4;
-
 	color: #565656;
-
 	cursor: pointer;
 
 }
 
-.btnAllWorks:checked ~ label.btnAllWorks,
-.btnCreative:checked ~ label.btnCreative,
-.btnCorporate:checked ~ label.btnCorporate,
-.btnPortfolio:checked ~ label.btnPortfolio {
-	background-color: #339bc4;
+/* Affiche les labels actifs en bleu */
+
+.btn-all-works:checked ~ label.btn-all-works,
+.btn-creative:checked ~ label.btn-creative,
+.btn-corporate:checked ~ label.btn-corporate,
+.btn-portfolio:checked ~ label.btn-portfolio {
+	background-color: #5babd4;
 	color: white;
 	box-shadow: 0 -3px #71A0CC inset;
 }
 
-/* Création du triangle */
+/* Création du triangle sous le bouton */
 
-.btnAllWorks:checked ~ label.btnAllWorks:after,
-.btnCreative:checked ~ label.btnCreative:after,
-.btnCorporate:checked ~ label.btnCorporate:after,
-.btnPortfolio:checked ~ label.btnPortfolio:after {
+.btn-all-works:checked ~ label.btn-all-works:after,
+.btn-creative:checked ~ label.btn-creative:after,
+.btn-corporate:checked ~ label.btn-corporate:after,
+.btn-portfolio:checked ~ label.btn-portfolio:after {
 	content: "";
 	display: block;
 	border-left: 10px solid transparent;
@@ -81,58 +69,39 @@ label.btnPortfolio {
 	right: 37%;
 }
 
-/* Cache les images non concernées par la sélection */
 
-.btnCreative:checked ~ #portfolioImages figure:not(.btnCreative),
-.btnCorporate:checked ~ #portfolioImages figure:not(.btnCorporate),
-.btnPortfolio:checked ~ #portfolioImages figure:not(.btnPortfolio) {
-	position: absolute;
-	border: 10px solid red;
-	opacity: 0;
-	transform: translate(-200%, -200%) scale(0);
-}
-
-
-#portfolioImages {
+#portfolio-images div {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
 }
 
-#portfolioImages img {
-	width: 280px;
+#portfolio-images div img {
+	width: 250px;
 }
 
-#portfolioImages figure {
+#portfolio-images figure {
 	margin: 5px;
-
 	position: relative;
 	z-index: 5;
 	cursor: pointer;
-
 	opacity: 1;
-	transition: all 2s;
+	transition: all 3s;
 }
 
 
-
-
-
-#portfolioImages figcaption {
+#portfolio-images figcaption {
 	width: 100%;
-
 	position: absolute;
 	bottom: 5px;
 	z-index: -1;
-
 	background-color: rgba(58, 58, 58, .7);
-
 }
 
 
-#portfolioImages div {
-	background-color: #339bc4;
+.fa-eye {
+	background-color: #5babd4;
 	padding: 5px;
 	position: absolute;
 	top: -14px;
@@ -142,16 +111,17 @@ label.btnPortfolio {
 	color: #fff;
 }
 
-#portfolioImages figcaption h3,
-#portfolioImages figcaption h4 {
+#portfolio-images figcaption h3,
+#portfolio-images figcaption p {
 	margin: 5px;
+	padding: 0;
 	color: white;
 	text-align: left;
 
 }
 
-/* Remonte la légende lors du survol de l'image */
+/* Remonte la légende lors du survol de l'image pour qu'elle soit visible */
 
-#portfolioImages figure:hover figcaption {
+#portfolio-images figure:hover figcaption {
 	z-index: 10;
 }

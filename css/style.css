@@ -1,21 +1,13 @@
 /*
-
-╔═════════════════════════════════╗
-║          Général                ║
-╚═════════════════════════════════╝
-text navtruc au dessus
-enlever decalage lors du click sur lien surtout acceuil 
-pk photo hamburger et autres dossiers?
-
-
-fleche vers bas on selected
-legende sur image portfolio
-lien google map
-
-grisclair #c4c4c4
-gris f #565656
-bleu #339bc4
+  _____ _________     ___      ______ 
+ / ____|__   __\ \   / / |    |  ____|
+| (___    | |   \ \_/ /| |    | |__   
+ \___ \   | |    \   / | |    |  __|  
+ ____) |  | |     | |  | |____| |____ 
+|_____/   |_|     |_|  |______|______|   
 */
+
+/* contient des régles de styles générales apliquées à tout le document */
 
 @font-face {
 	font-family: 'Roboto-Black';
@@ -28,55 +20,48 @@ bleu #339bc4
 }
 
 body {
-	position: relative;
-	margin: auto;
-	padding: 0;
 	font-family: 'Roboto-Medium', sans-serif;
+	text-align: center;
 }
+
+
 
 h1,
 h2 {
 	font-family: 'Roboto-Black', sans-serif;
-
+	text-transform: uppercase;
 }
 
 p {
 	padding: 10px;
+	color: #565656;
 }
 
 a {
 	text-decoration: none;
-	color: #fff;
+
 }
 
-section p,
-nav a {
-	color: #565656;
+section:not(:target) {
+	margin: 40px 0;
 }
 
-/* Décale le contenu de la page vers bas, afin de pas masquer le contenu caché par le menu*/
-
-main {
-
-	margin-top: 100px;
-}
-
-section {}
-
-/*Décale la clible des liens vers le bas, afin de pas masquer le contenu caché par le menu*/
+/* Décale la clible des liens vers le bas, afin de pas masquer le contenu caché par le menu*/
 
 section:target {
-	padding-top: 83px;
+	padding-top: 80px;
 }
 
 
 .bleu {
-	color: #339bc4;
+	color: #5babd4;
 }
 
 button {
-	background-color: #339bc4;
+	background-color: #5babd4;
 	padding: 10px;
+	border-radius: 5px;
+	font-weight: 600;
 	color: white;
 }
 
@@ -86,26 +71,25 @@ label:hover {
 
 }
 
-.rondBarre {
+/* Petit dessin qui apparait sous 2 tritres donc même code*/
+
+.rond-et-barres {
 	height: 20px;
-	margin: 20px;
+	margin: 10px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.rondBarre span {
+.rond-et-barres span {
 	height: 1px;
 	width: 50px;
 	background-color: #c4c4c4;
 }
 
-.rondBarre i {
-	display: flex;
-	text-align: center;
-}
+/* Cache certains input des boutons radio et les fait passer pour des boutons normaux pour utiliser l'état checked */
 
-
-.cache {
-                             	display: none;
+#btn-projets input,
+nav input {
+	display: none;
 }

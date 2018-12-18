@@ -1,67 +1,79 @@
-/* Regles que pour les portables*/
+/* 
+ _____  ______  _____ _____   ____  _   _  _____ _______      ________ 
+|  __ \|  ____|/ ____|  __ \ / __ \| \ | |/ ____|_   _\ \    / /  ____|
+| |__) | |__  | (___ | |__) | |  | |  \| | (___   | |  \ \  / /| |__   
+|  _  /|  __|  \___ \|  ___/| |  | | . ` |\___ \  | |   \ \/ / |  __|  
+| | \ \| |____ ____) | |    | |__| | |\  |____) |_| |_   \  /  | |____ 
+|_|  \_\______|_____/|_|     \____/|_| \_|_____/|_____|   \/   |______|                       
+*/
 
-@media all and (max-width: 425px) {
+/* Regles valables uniquement pour les portables*/
 
-	/*navigation*/
-	/*supprime la bordure au dessus de la navigation*/
-	nav a,
-	nav a:hover,
-	#btnAcceuil {
-		border: none;
-	}
-
-	/*réduit la hauteur du menu et du logo*/
-	#menuGauche {
-		padding: 0;
-		height: 40px;
-	}
-	#menuGauche img {
-		width: 180px;
-		padding: 0;
-
-	}
-
-	/*augmente la largeur du contenant des liens afin qu'ils passent à la ligne*/
-	#menuDroite {
-		width: 100%;
-		height: auto;
-	}
-
-	#menuDroite a {
-		padding: 10px 0;
-		line-height: 30px;
-	}
-
-	/* Services*/
-	/* Centre l'image*/
-	#servicesGauche img {
-		margin: auto;
-	}
-	#servicesGauche {
-		height: auto;
-	}
-
+@media all and (max-width: 625px) {
 
 	/* Projets */
-	#portfolioImages img {
-		width: 180px;
+	/* Remonte les légendes des images du portfolio pour qu'elles soint plus visibles sur portable*/
+	#portfolio-images figure figcaption {
+		z-index: 10;
 	}
 }
 
 /* Regles pour les tablettes et les portables */
 
 @media all and (max-width: 768px) {
-	
-	/* section contact: affiche un lien de la carte au lieu de la carte pour mettre en avant le formulaire de contact */
-	iframe {
-		display: none;
-	}
-	
-	.cache {
+
+	/* header */
+	/* Création du menu hamburger */
+	nav label,
+	nav input {
 		display: block;
 	}
 
+	nav ul {
+		display: none;
+	}
+
+	input.navicon:checked ~ ul {
+		display: block;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		position: absolute;
+	}
+
+	nav ul li {
+		float: none;
+	}
+
+	#slider {
+		margin-top: 100px;
+	}
+
+	#slider-texte p {
+		font-size: 1.8vw;
+	}
+
+	/* Contact */
+	/* section contact: déplace la carte en dessous du formulaire afin qu'elle reste visible */
+	
 	#notre-adresse {
 		position: static;
+	}
+
+	#notre-adresse div {
+		width: 80%;
+		margin: auto;
+	}
+	iframe {
+		margin-top: 40px;
+		position: static;
+	}
+}
+
+/* Les images du porfolio étant contenues dans 2 div afin de toujours avoir des lignes de 4, ce règle force l'affichage des images du porfolio sur 2 colonnes afin de ne pas avoir 3 icones sur la même ligne et une toute seule */
+
+@media all and (max-width: 1060px) {
+	#portfolio-images div {
+		display: inline-block;
 	}
 }
